@@ -1,5 +1,5 @@
 # harmonic3dhfb
-
+# 0) Need to define different nshell for x,y,z.
 # 1) Need to compute potentials after Hamiltonian, density step, but before compute observables.
 # 2) Need to compute divJ density.
 # 3) Need to compute Coulomb potential more accurately.

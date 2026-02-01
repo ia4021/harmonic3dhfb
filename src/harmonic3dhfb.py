@@ -49,10 +49,10 @@ def obtainNumStates(nshellsx,nshellsy,nshellsz):
     # Then, to get all the states with nshell >= nx + ny + nz, we just add the arrays together
     # to get all possible combinations at onces. Then we use numpy logic to grab the ones that
     # satisfy the condition.
-    grid_sum = x[:, None, None] + y[None, :, None] + z[None, None, :]
+    grid_sum = nx[:, None, None] + ny[None, :, None] + nz[None, None, :]
      
     # This creates a boolean mask and sums the True values
-    return jnp.sum(grid_sum < nshells_limit)
+    return jnp.sum(grid_sum <= nshells_limit)
 
 # Counts total number of allowed states given nshells. 
 def obtainNumStates_old(nshellsx,nshellsy,nshellsz):

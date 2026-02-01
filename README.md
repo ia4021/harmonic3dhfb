@@ -1,5 +1,4 @@
 # harmonic3dhfb
-# 0) Need to define different nshell for x,y,z.
 # 3) Need to compute Coulomb potential more accurately.
 # 6) Need exit condition after computing observables.
 # 8) Need to place all functions in a for loop.
